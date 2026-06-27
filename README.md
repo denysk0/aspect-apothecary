@@ -74,6 +74,18 @@ each day, so you reinvest coin into upgrades: an extra counter to serve more
 customers, more customer patience, better negotiation, and the apprentice that
 can solve puzzles for you.
 
+## Apple frameworks used
+
+- **Foundation Models** ([docs](https://developer.apple.com/documentation/foundationmodels)):
+  the on-device language model. This app uses
+  [`SystemLanguageModel`](https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel)
+  to check availability and
+  [`LanguageModelSession`](https://developer.apple.com/documentation/foundationmodels/languagemodelsession)
+  to generate persona, desire, potion text, and reviews.
+- **Vision** ([docs](https://developer.apple.com/documentation/vision)): on-device
+  image classification for the photo scan, via
+  [`ClassifyImageRequest`](https://developer.apple.com/documentation/vision/classifyimagerequest).
+
 ## Requirements
 
 - iOS 27, built with Xcode 27.
