@@ -48,16 +48,24 @@ hex board you link a central essence to its anchor aspects, routing chains
 through derived intermediates. Puzzles are solvable by construction: the engine
 walks the graph outward from aspects you own, so a legal path always exists.
 
+<img src="docs/screenshot-crafting.png" width="320" alt="Crafting board" />
+
 ## ML features
 
 - **Customer text generation.** On-device guided generation for persona, desire,
-  potion name and description, and the review.
+  potion name and description, and the review. The model stays in character even
+  when a customer line tries to derail it.
 - **Photo scan.** Point the camera at a real object. Vision recognizes it, the
   language model suggests which aspects it carries, and the engine grants a
   capped amount once per kind of object.
 - **Autonomous apprentice.** The language model solves a puzzle itself, one move
   at a time, from the legal moves the engine offers. It is capable but imperfect,
   so you can watch it reason and sometimes pick a wrong link.
+
+<p>
+  <img src="docs/screenshot-conversation.png" width="320" alt="Customer conversation" />
+  <img src="docs/screenshot-scan.png" width="320" alt="Photo scan with Vision" />
+</p>
 
 ## Progression
 
